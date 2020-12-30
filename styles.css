@@ -241,3 +241,33 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.currency-table--date{
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    width: 190px;
+    min-width: 200px;
+    max-width: 280px;
+    height: 30px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+}
+
+.currency-table--date p, .comisiones-table--date p{
+    color: var(--warm-black);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.comisiones-table--date{
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 5px;
+    width: 190px;
+    min-width: 200px;
+    max-width: 280px;
+    height: 30px;
+    background-color:var(--soft-blue);
+    border-radius: 5px;
+}
