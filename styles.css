@@ -425,6 +425,7 @@ main{
 
 .plans-container--card{
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
     min-width: 230px;
     max-width: 300px;
@@ -434,6 +435,25 @@ main{
     border-radius: 8px;
     background-color: var(--just-white);
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.plans-container--slider{
+    display: flex;
+    gap: 20px;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.plans-container--slider::-webkit-scrollbar-thumb{
+    background: var(--bitcoin-orange);
+    border-radius: 4px;
+}
+
+.plans-container--slider::-webkit-scrollbar-track{
+    background: var(--soft-orange);
+    border-radius: 4px;
 }
 
 .plans-container--card .recomendado{
@@ -501,5 +521,5 @@ main{
     height: 20px;
     background-image: url('./assets/icons/arrow-right.svg');
     vertical-align: text-bottom;
-
 }
+
